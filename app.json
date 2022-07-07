@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "houseshop",
+    "slug": "houseshop",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

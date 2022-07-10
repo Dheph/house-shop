@@ -1,0 +1,40 @@
+{
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"strict": true,
+		"allowJs": true,
+		"jsx": "react-native",
+		"noEmit": true,
+		"isolatedModules": true,
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"skipLibCheck": false,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+
+		"paths": {
+			"*": ["./*"],
+			"@root/*": ["./*"],
+			"@src/*": ["./src"],
+			"@components/*": ["./src/components/*"],
+			"@services/*": ["./src/services/*"],
+			"@errors/*": ["./src/errors/*"],
+			"@utils/*": ["./src/utils/*"],
+			"@context/*": ["./src/context/*"],
+			"@assets/*": ["./src/assets/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@globalTemplates/*": ["./src/templates/GlobalTemplates/*"],
+			"@appTemplates/*": ["./src/templates/AppTemplates/*"],
+			"@authTemplates/*": ["./src/templates/AuthTemplates/*"],
+			"@atoms/*": ["./src/components/atoms/*"],
+			"@molecules/*": ["./src/components/molecules/*"],
+			"@organisms/*": ["./src/components/organisms/*"],
+			"@routes/*": ["./src/routes/index.tsx", "./src/routes/*"],
+			"@globalStyled": ["./src/global/styles/styles.ts"],
+			"@theme/*": ["./src/theme/index.ts", "./src/theme/*"]
+		}
+	},
+	"exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}

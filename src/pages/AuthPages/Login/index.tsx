@@ -1,12 +1,11 @@
-import { LoginTemplate } from '@authTemplates/LoginTemplate';
-
 import React from 'react';
 import * as Sg from '@globalStyled';
+import { LoginAuthTemplate } from '@authTemplates/LoginAuthTemplate';
 
 export const Login = () => {
 	return (
 		<Sg.CenteredItemsContainer>
-			<LoginTemplate />
+			<LoginAuthTemplate />
 		</Sg.CenteredItemsContainer>
 	);
 };

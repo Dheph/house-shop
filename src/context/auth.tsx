@@ -17,7 +17,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
 	useEffect(() => {
 		// storage verifier
 		async function loadStorageData() {
-			setIsAuth(true);
+			setIsAuth(false);
 		}
 		loadStorageData();
 	}, []);

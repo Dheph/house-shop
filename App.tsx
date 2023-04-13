@@ -1,5 +1,7 @@
 import 'react-native-gesture-handler';
 
+import { AuthProvider } from '@context/index';
+
 import {
 	useFonts,
 	Roboto_400Regular,
@@ -16,7 +18,6 @@ import theme from '@theme/';
 import { ThemeProvider } from 'styled-components';
 
 import { Routes } from '@routes/';
-import { AuthProvider } from '@context/auth';
 
 export default function App() {
 	useEffect(() => {

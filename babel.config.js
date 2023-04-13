@@ -34,7 +34,7 @@ module.exports = function (api) {
 						'@repositories': './src/repositories',
 						'@models': './src/databases/tables',
 						'@context': './src/context',
-						'@globalTemplates': './src/templates/GlobalTemplates',
+						'@globalComponents': './src/components/globalComponents',
 						'@appTemplates': './src/templates/AppTemplates',
 						'@authTemplates': './src/templates/AuthTemplates',
 						'@atoms': './src/components/Atoms',

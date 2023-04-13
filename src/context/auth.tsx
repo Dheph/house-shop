@@ -1,7 +1,10 @@
 import React, { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import { IRegisterDtoRequest } from '@services/registerService/dto/registerDtoRequest';
+import { registerService } from '@services/registerService';
 
 interface AuthContextProps {
 	isAuth: boolean;
+	register: (data: IRegisterDtoRequest) => Promise<void>;
 }
 
 interface AuthProviderProps {
@@ -24,10 +27,17 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
 	// function to login
 	// async function login(){}
-	// async function register(){}
+	async function register(data: IRegisterDtoRequest) {
+		const userAuth = await registerService(data);
+		if (!userAuth) return;
+		console.log(userAuth);
+		setIsAuth(true);
+
+		return;
+	}
 	// async function logout(){}
 
-	return <Auth.Provider value={{ isAuth }}>{children}</Auth.Provider>;
+	return <Auth.Provider value={{ isAuth, register }}>{children}</Auth.Provider>;
 }
 
 export function useAuth() {

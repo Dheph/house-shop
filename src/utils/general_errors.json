@@ -1,0 +1,22 @@
+{
+	"auth_errors": {
+		"invalid-email": {
+			"message": "Email Inválido",
+			"error_code": 1
+		},
+		"weak-password": {
+			"message": "Sua senha deve ter ao menos 6 caracteres",
+			"error_code": 2
+		},
+		"check-data": {
+			"message": "Ops, algo deu errado, verifique seus dados e tente novamente",
+			"error_code": 3
+		}
+	},
+	"generics": {
+		"something_wrong": {
+			"message": "Ops, algo deu errado!",
+			"error_code": 10
+		}
+	}
+}

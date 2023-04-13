@@ -25,7 +25,7 @@
 			"@context/*": ["./src/context/*"],
 			"@assets/*": ["./src/assets/*"],
 			"@pages/*": ["./src/pages/*"],
-			"@globalTemplates/*": ["./src/templates/GlobalTemplates/*"],
+			"@globalComponents/*": ["./src/components/globalComponents/*"],
 			"@appTemplates/*": ["./src/templates/AppTemplates/*"],
 			"@authTemplates/*": ["./src/templates/AuthTemplates/*"],
 			"@atoms/*": ["./src/components/atoms/*"],

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
 import slowly from '../../../assets/png/slowly.png';
-
+import { SubmitButtonGlobalComponent } from '@globalComponents/SubmitButtonGlobalComponent';
 export const LoginAuthTemplate = () => {
 	return (
 		<S.Container>
@@ -19,13 +19,8 @@ export const LoginAuthTemplate = () => {
 			</S.Body>
 
 			<S.Footer>
-				<S.SubmitButton>
-					<S.SubmitButtonText> Entrar </S.SubmitButtonText>
-				</S.SubmitButton>
-
-				<S.RegisterButton>
-					<S.RegisterButtonText> Registrar-se </S.RegisterButtonText>
-				</S.RegisterButton>
+				<SubmitButtonGlobalComponent text="Entrar" color="primary" />
+				<SubmitButtonGlobalComponent text="Registrar-se" color="secondary" />
 			</S.Footer>
 		</S.Container>
 	);

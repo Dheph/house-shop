@@ -40,37 +40,3 @@ export const Text = styled.Text`
 	width: 75%;
 	text-align: center;
 `;
-
-// TODO: export this component to global
-
-export const SubmitButton = styled.TouchableOpacity`
-	background-color: ${({ theme }) => theme.colors.primary};
-	width: 75%;
-	height: 60px;
-	justify-content: center;
-	align-items: center;
-	border-radius: 10px;
-`;
-
-export const SubmitButtonText = styled.Text`
-	color: ${({ theme }) => theme.colors.text_title};
-	font-family: ${({ theme }) => theme.fonts.medium};
-	font-size: 15px;
-`;
-
-// component end
-// TODO: excluir este após construir o component certinho :)
-export const RegisterButton = styled.TouchableOpacity`
-	background-color: ${({ theme }) => theme.colors.secondary};
-	width: 75%;
-	height: 60px;
-	justify-content: center;
-	align-items: center;
-	border-radius: 10px;
-`;
-
-export const RegisterButtonText = styled.Text`
-	color: ${({ theme }) => theme.colors.primary};
-	font-family: ${({ theme }) => theme.fonts.medium};
-	font-size: 15px;
-`;

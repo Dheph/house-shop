@@ -1,12 +1,12 @@
 import { IRegisterDtoRequest } from './dto/registerDtoRequest';
 import errors from '../../utils/general_errors.json';
-import firebase from '../../../firebaseConnection';
+//import firebase from '../../../firebaseConnection';
 
 export const registerService = async ({
 	email,
 	password,
 }: IRegisterDtoRequest): Promise<any | void> => {
-	if (!email || email === '') {
+	/*	if (!email || email === '') {
 		console.log('necessario adicionar email ');
 		return;
 	}
@@ -30,4 +30,5 @@ export const registerService = async ({
 				return errors.generics['something_wrong'];
 			}
 		});
+		*/
 };

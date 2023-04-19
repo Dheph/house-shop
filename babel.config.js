@@ -18,6 +18,8 @@ module.exports = function (api) {
 				},
 			],
 			['@babel/plugin-proposal-decorators', { legacy: true }],
+			'@babel/preset-typescript',
+			'@babel/plugin-preset-typescript',
 			[
 				'module-resolver',
 				{
